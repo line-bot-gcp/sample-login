@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+        <title>LIFF v2 ハンズオン</title>
+    </head>
+    <body>
+        <div id="app">
+            <button @click=logout>ログアウトする</button>
+
+            <h1>{{displayName}}</h1>
+            <p>{{userId}}</p>
+            <p>{{statusMessage}}</p>
+            <img :src=pictureUrl alt="profile" width="200px" />
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
